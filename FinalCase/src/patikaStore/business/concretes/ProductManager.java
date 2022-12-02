@@ -85,7 +85,7 @@ public ProductManager(Product p, String pr, String pb, int pi, int pc) {
 	
 	}
 	
-	public void listBy()
+	public void listBy() //listing products by brands
 	{		
 		Product p2 = new Product();
 	
@@ -106,13 +106,17 @@ public ProductManager(Product p, String pr, String pb, int pi, int pc) {
 					+ "\n0) Main Menu");
 	
 			pc = s.nextInt();
-			
+		
 			switch(pc)
 			{
 			case 1:
 				System.out.println(	"Apple products");
 				System.out.println("\nBrand" + "    |   " + "Model"+"   |   "+"Price");
-				if (pb.equals("Apple"))
+				if (pb == null)
+				{
+					return;
+				}
+				else if(pb.equals("Apple"))
 				{
 					System.out.println("\n"+p.getBrandName()+"       "+p.getProductName()+"      " + p.getPrice());
 					
@@ -121,7 +125,11 @@ public ProductManager(Product p, String pr, String pb, int pi, int pc) {
 			case 2:
 				System.out.println("Asus products");
 				System.out.println("\nBrand" + "    |   " + "Model"+"   |   "+"Price");
-				if (pb.equals("Asus"))
+				if (pb == null)
+				{
+					return;
+				}
+				else if(pb.equals("Asus"))
 				{
 					System.out.println("\n"+p.getBrandName()+"       "+p.getProductName()+"      " + p.getPrice());
 					
@@ -130,7 +138,11 @@ public ProductManager(Product p, String pr, String pb, int pi, int pc) {
 			case 3:
 				System.out.println("Casper products");
 				System.out.println("\nBrand" + "    |   " + "Model"+"   |   "+"Price");
-				if (pb.equals("Casper"))
+				if (pb == null)
+				{
+					return;
+				}
+				else if(pb.equals("Casper"))
 				{
 					System.out.println("\n"+p.getBrandName()+"       "+p.getProductName()+"      " + p.getPrice());
 					
@@ -139,7 +151,11 @@ public ProductManager(Product p, String pr, String pb, int pi, int pc) {
 			case 4:
 				System.out.println("HP products");
 				System.out.println("\nBrand" + "    |   " + "Model"+"   |   "+"Price");
-				if (pb.equals("HP"))
+				if (pb == null)
+				{
+					return;
+				}
+				else if(pb.equals("HP"))
 				{
 					System.out.println("\n"+p.getBrandName()+"       "+p.getProductName()+"      " + p.getPrice());
 					
@@ -148,7 +164,11 @@ public ProductManager(Product p, String pr, String pb, int pi, int pc) {
 			case 5:
 				System.out.println("Huawei Products");
 				System.out.println("\nBrand" + "    |   " + "Model"+"   |   "+"Price");
-				if (pb.equals("Huawei"))
+				if (pb == null)
+				{
+					return;
+				}
+				else if(pb.equals("Huawei"))
 				{
 					System.out.println("\n"+p.getBrandName()+"       "+p.getProductName()+"      " + p.getPrice());
 					
@@ -157,7 +177,11 @@ public ProductManager(Product p, String pr, String pb, int pi, int pc) {
 			case 6:
 				System.out.println("Lenovo products");
 				System.out.println("\nBrand" + "    |   " + "Model"+"   |   "+"Price");
-				if (pb.equals("Lenovo"))
+				if (pb == null)
+				{
+					return;
+				}
+				else if(pb.equals("Lenovo"))
 				{
 					System.out.println("\n"+p.getBrandName()+"       "+p.getProductName()+"      " + p.getPrice());
 					
@@ -169,7 +193,11 @@ public ProductManager(Product p, String pr, String pb, int pi, int pc) {
 				System.out.println("\nBrand " + "     |   " + "Model"+"    |  "+"Price");
 				System.out.println("\n"+p2.getBrandName()+"       "+p2.getProductName()+"      " + p2.getPrice());
 				
-				if (pb.equals("Monster"))
+				if (pb == null)
+				{
+					return;
+				}
+				else if(pb.equals("Monster"))
 				{
 					System.out.println("\n"+p.getBrandName()+"       "+p.getProductName()+"      " + p.getPrice());
 					
@@ -178,7 +206,11 @@ public ProductManager(Product p, String pr, String pb, int pi, int pc) {
 			case 8:
 				System.out.println("Samsung products");
 				System.out.println();
-				if (pb.equals("Samsung"))
+				if (pb == null)
+				{
+					return;
+				}
+				else if(pb.equals("Samsung"))
 				{
 					System.out.println("\n"+p.getBrandName()+"       "+p.getProductName()+"      " + p.getPrice());
 					
@@ -189,7 +221,11 @@ public ProductManager(Product p, String pr, String pb, int pi, int pc) {
 				p2.setProductId(2);p2.setBrandName("Xiaomi"); p2.setProductName("Redmi"); p2.setPrice(7500);
 				System.out.println("\nBrand" + "    |   " + "Model"+"   |   "+"Price");
 				System.out.println("\n"+p2.getBrandName()+"       "+p2.getProductName()+"       " +p2.getPrice());
-				if (pb.equals("Xiaomi"))
+				if (pb == null)
+				{
+					return;
+				}
+				else if(pb.equals("Xiaomi"))
 				{
 					System.out.println("\n"+p.getBrandName()+"       "+p.getProductName()+"      " + p.getPrice());
 					
