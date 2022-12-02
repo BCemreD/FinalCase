@@ -29,7 +29,7 @@ public ProductManager(Product p, String pr, String pb, int pi, int pc) {
 	}
 	
 	public ProductManager() {}
-
+@Override
 	public  void add() 
 	{
 		
@@ -74,7 +74,7 @@ public ProductManager(Product p, String pr, String pb, int pi, int pc) {
 		
 	
     }
-	
+@Override	
 	public  void delete ()
 	{
 		System.out.println("Write id of the product you want to delete.");
@@ -84,7 +84,7 @@ public ProductManager(Product p, String pr, String pb, int pi, int pc) {
 		pi--;
 	
 	}
-	
+@Override	
 	public void listBy() //listing products by brands
 	{		
 		Product p2 = new Product();
